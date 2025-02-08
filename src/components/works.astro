@@ -1,0 +1,97 @@
+---
+import Images from "../components/images.astro";
+import yourColor from "/public/Your-Color-wuerion.webp";
+import ecogardens from "/public/ecogardens.webp";
+import huddle from "/public/huddle.webp";
+---
+
+<section class="flex flex-col gap-5" id="works">
+    <div class="w-full mt-5">
+        <p class="text-xl text-start border-b-2 border-purple-500">Works</p>
+    </div>
+    <div class="gap-3 grid lg:grid-cols-3 lg:gap-5">
+        <div class="">
+            <div class="w-full">
+                <Images
+                    ImgUrl={yourColor}
+                    alt="Your Color"
+                    addClass="object-cover w-full h-48 rounded-t-lg"
+                />
+            </div>
+            <div class="bg-white p-2 text-center rounded-b-lg">
+                <h3>
+                    <a
+                        href="https://your-color-lilac.vercel.app/"
+                        target="_blank"
+                        class="text-black text-lg">Your Color</a
+                    >
+                </h3>
+                <p class="text-black">
+                    Your Color is a website what offers a colorimetry tools to
+                    help users discover which colors complement theis natural
+                    features based on the four-season theory: Spring,
+                    Summer,Autumn, and Winter. By inputing characteristics like
+                    skin tone, eye color and color hair, urser can find
+                    personalized color palettes that enhence their style and
+                    confidence. It includes an interactive test and explanatios
+                    pf how colors influence the following link: <a
+                        href="https://your-color-lilac.vercel.app/"
+                        target="_blank"
+                        class="text-blue-500">Your Color</a
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="">
+            <div class="card">
+                <Images
+                    ImgUrl={ecogardens}
+                    alt="Your Color"
+                    addClass="object-cover w-full h-48 rounded-t-lg"
+                />
+            </div>
+            <div class="bg-white p-2 text-center rounded-b-lg">
+                <h3>
+                    <a
+                        href="https://ecogardens.zeabur.app/"
+                        target="_blank"
+                        class="text-black text-lg">EcoGaedens</a
+                    >
+                </h3>
+                <p class="text-black">
+                    EcoGardes is a website that offers customers a way to get an
+                    automated indoor garden, ideal for people living in an
+                    apartment or house with little outdoor space. The main
+                    product is a modular site that includes automatic
+                    irrigation, humidity sensor and a mobile application to
+                    monitor the status of the garden. If you want more
+                    information, click on the following link: <a
+                        href="https://ecogardens.zeabur.app/"
+                        class="text-blue-500">EcoGardens</a
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="">
+            <div class="card">
+                <Images
+                    ImgUrl={huddle}
+                    alt="Your Color"
+                    addClass="object-cover w-full h-48 rounded-t-lg"
+                />
+            </div>
+            <div class="bg-white p-2 text-center rounded-b-lg">
+                <h3>
+                    <a href="https://exquisite-granita-242b55.netlify.app/" target="_blank" class="text-black text-lg">Huddle</a>
+                </h3>
+                <p class="text-black">
+                    The Huddle is a landing page that is a design proposal
+                    focused on the digital community. The objective is to
+                    provide an attractive and easy-to-navigate experience to
+                    promote collaboration and the exchange of ideas among users.
+                    If you want molre information, click on the following link: <a href="https://exquisite-granita-242b55.netlify.app/" target="_blank" class="text-blue-500">Huddle</a> 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

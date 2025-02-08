@@ -1,0 +1,78 @@
+<section
+    class="text-black dark:text-white hidden lg:flex flex-col gap-5 items-center justify-center h-screen"
+>
+    <div class="animate-title text-5xl min-w-[1250]">
+        <div class="min-w-[1250] text-top">
+            <div>
+                <span class="text-dark">!It's me...</span>
+                <span class="text-purple-400">Emmanuel</span>
+            </div>
+        </div>
+        <div class="text-bottom">
+            <div>Fron-End Developer</div>
+        </div>
+    </div>
+</section>
+<style>
+    .animate-title > div div {
+        padding: 2vmin 0;
+        position: absolute;
+    }
+    .animate-title > div div span {
+        display: block;
+        }
+    .animate-title > div.text-top {
+        border-bottom: 1vmin solid rgb(192 132 252);
+        top: 0;
+    }
+    .animate-title > div.text-top div {
+        animation: showTopText 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        bottom: 0;
+        transform: translate(0, 100%);
+    }
+    .animate-title > div.text-bottom {
+        bottom: 0;
+    }
+    .animate-title > div.text-bottom div {
+        animation: shadowBottomText 0.5s;
+        animation-delay: 1.75s;
+        animation-fill-mode: forwards;
+        transform: translate(0, -100%);
+    }
+
+    @keyframes showTopText {
+        0% {
+            transform: translate3d(0, 100%, 0);
+        }
+        40%,
+        60% {
+            transform: translate3d(0, 50%, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes shadowBottomText {
+        0% {
+            transform: translate3d(0, -100%, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .animate-title {
+        font-family: 'Syne';
+        height: 100%;
+        position: absolute;
+        width: 50%;
+    }
+    .animate-title > div {
+        height: 50%;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    }
+</style>

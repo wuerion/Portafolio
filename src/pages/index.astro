@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Home from '../components/home.astro';
+import Sidebar from '../components/sidebar.astro';
+import About from '../components/about.astro';
+import Skills from '../components/skills.astro';
+import Works from '../components/works.astro';
+---
+<Layout>
+	<!-- <header class="block lg:row-span-5"> -->
+	<header class="w-full">
+		<Sidebar />
+	</header>
+	<!-- <main class="font-title col-span-4"> -->
+	 <main class="font-title lg:col-span-4">
+		<Home />
+		<About />
+		<Skills />
+	</main>
+</Layout>
