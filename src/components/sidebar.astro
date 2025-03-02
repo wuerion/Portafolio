@@ -7,30 +7,31 @@ import Images from "../components/images.astro";
 >
     <div class="w-1/2 rounded columns-3"> <!-- Sidebar Mobile -->
         <div class="animate-title text-lg lg:hidden">
-            <div class="text-top">
+            <div class="text-top pl-2">
                 <div>
                     <span class="text-dark text-xl">!It's me...</span>
                     <span class="text-purple-400 text-xl">Emmanuel</span>
                 </div>
             </div>
-            <div class="text-bottom">
+            <div class="text-bottom pl-2">
                 <div class="text-xl">Fron-End Developer</div>
             </div>
         </div>
     </div>
 
-    <div
+    <!-- Sidebar Desktop -->
+    <div 
         class="w-full pt-2 flex justify-center items-center lg:flex-col col-start-3 col-span-4 lg:col-start-1"
     >
         <Images
-            ImgUrl="/logo.webp"
+            ImgUrl="/logo.avif"
             alt="logo"
-            addClass="rounded-full w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
+            addClass="rounded-full w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]"
         />
         <p class="text-center mt-5 hidden lg:block">Front-End Developer</p>
     </div>
 
-    <div class="w-full col-span-4 h-10 my-3.5">
+    <div class="w-full col-span-4 h-10 my-3.5"> <!-- Sidebar Links -->
         <ul class="flex flex-row justify-evenly">
             <li>
                 <a href="https://twitter.com/WUERION_47">
