@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				title: 'Syne',
+				syne: ['Syne', 'sans-serif'],
 			},
 		},
 	},
