@@ -3,14 +3,14 @@ import Images from "../components/images.astro";
 ---
 
 <section
-    class="grid grid-cols-4 w-full gap-y-2 lg:border-r-2 border-purple-500 h-80 lg:h-screen lg:max-w-[210px] lg:fixed lg:top-0 lg:left-0"
+    class="grid grid-cols-4 w-full gap-y-2 lg:border-r-2 border-violet-700 dark:border-purple-500 h-80 lg:h-screen lg:max-w-[210px] lg:fixed lg:top-0 lg:left-0"
 >
     <div class="w-1/2 rounded columns-3"> <!-- Sidebar Mobile -->
         <div class="animate-title text-lg lg:hidden">
-            <div class="text-top pl-2">
+            <div class="text-top pl-2 border-b-[5px] border-violet-400 dark:border-purple-400 top-0">
                 <div>
                     <span class="text-dark text-xl">!It's me...</span>
-                    <span class="text-purple-400 text-xl">Emmanuel</span>
+                    <span class="text-violet-700 dark:text-purple-400 text-xl">Emmanuel</span>
                 </div>
             </div>
             <div class="text-bottom pl-2">
@@ -130,7 +130,7 @@ import Images from "../components/images.astro";
                 >
             </li>
             <li
-                class="rounded-full px-5 p-2.5 mx-2 text-black font-semibold text-center bg-purple-400"
+                class="rounded-full px-5 p-2.5 mx-2 text-black font-semibold text-center bg-violet-400 dark:bg-purple-400 "
             >
                 <a href="#works" class="text-base">Check my works!</a>
             </li>
@@ -145,10 +145,6 @@ import Images from "../components/images.astro";
     }
     .animate-title > div.text-top span {
         display: block;
-    }
-    .animate-title > div.text-top {
-        border-bottom: 5px solid rgb(192 132 252);
-        top: 0;
     }
     .animate-title > div.text-top div {
         animation: showTopText 1s;
