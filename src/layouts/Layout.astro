@@ -1,3 +1,7 @@
+---
+import '@fontsource/syne';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,15 +10,9 @@
 		<link rel="icon" type="image/svg+xml" href="/logo.avif" />
 		<meta name="generator" content={Astro.generator} />
 		<title>My portafolio</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
-			rel="stylesheet"
-		/>
 	</head>
 	<body
-		class="bg-[#D4D4D4] dark:bg-[#171717] text-black dark:text-white lg:grid grid-cols-5 lg:h-svh lg:w-svh"
+		class="bg-[#D4D4D4] dark:bg-[#171717] text-black dark:text-white lg:grid grid-cols-5 lg:h-svh lg:w-svh font-syne"
 	>
 		<slot />
 	</body>
