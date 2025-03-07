@@ -1,5 +1,6 @@
 ---
 import '@fontsource/syne';
+const { addClass } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +14,7 @@ import '@fontsource/syne';
 		<meta name="description" content="Cada proyecto en mi portafolio cuenta una historia de dedicación y amor por el desarrollo web. Te invito a conocer mi trabajo y a descubrir la magia de la tecnología">
 	</head>
 	<body
-		class="bg-[#D4D4D4] dark:bg-[#171717] text-black dark:text-white lg:grid grid-cols-5 lg:h-svh lg:w-svh font-syne"
+		class=` ${addClass} bg-[#D4D4D4] dark:bg-[#171717] text-black dark:text-white lg:h-svh lg:w-svh font-syne`
 	>
 		<slot />
 	</body>
