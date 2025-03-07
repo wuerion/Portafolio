@@ -1,5 +1,6 @@
 ---
 import Images from "../components/images.astro";
+import Logo from "/public/logo.avif";
 ---
 
 <section
@@ -24,9 +25,10 @@ import Images from "../components/images.astro";
         class="w-full pt-2 flex justify-center items-center lg:flex-col col-start-3 col-span-4 lg:col-start-1"
     >
         <Images
-            ImgUrl="/logo.avif"
+            ImgUrl={Logo}
             alt="logo"
             addClass="rounded-full w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]"
+            
         />
         <p class="text-center mt-5 hidden lg:block">Front-End Developer</p>
     </div>
@@ -126,8 +128,8 @@ import Images from "../components/images.astro";
 
     <div class="w-full col-span-4"><!-- CTA -->
         <ul>
-            <li class="text-center mb-1">
-                <a href="mailto:ennabuelro@gmail.com" class="text-base">emmanuelro152@gmail.com</a
+            <li class="text-center mb-2">
+                <a href="mailto:ennabuelro@gmail.com" class="text-base" title="E-mail">emmanuelro152@gmail.com</a
                 >
             </li>
             <li
