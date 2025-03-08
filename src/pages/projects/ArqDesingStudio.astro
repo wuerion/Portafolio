@@ -1,0 +1,68 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Images from "../../components/images.astro";
+import ArqDesing from "../../images/arqDesingStudio.webp";
+import ArqDSM from "../../images/ADSM.webp";
+import ArqDSD from "../../images/ADSD.webp";
+---
+
+<Layout>
+    <main class="flex flex-col items-center gap-10 py-5">
+        <div class="w-full fixed flex justify-end px-5">
+            <a href="/" title="Exit">
+                <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H15" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M19 12L15 8M19 12L15 16M19 12H9" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </a>
+        </div>
+        <div>
+            <h2 class="text-center text-2xl font-semibold">Arq Desing Studio</h2>
+        </div>
+        <div class="px-3">
+            <a href="https://arq-desing-studio.vercel.app/" title="Arq Desing Studio" target="_blank">
+                <Images 
+                ImgUrl={ArqDesing}
+                alt="image page the Arq Desing Studio"
+                addClass="rounded-md"
+                />
+            </a>
+        </div>
+        <div class="max-w-[700px] mx-3">
+            <p>
+                Arq Design Studio is an architecture and design studio that champions innovation and functionality. Our approach combines creativity and precision to transform ideas into unique, personalized, and stylish spaces. Discover how the fusion of art and technique can elevate your projects to another level. click on the following link:
+            </p>
+        </div>
+        <div class="flex flex-col gap-5 max-w-[700px] mx-3">
+            <h2>Page Speed Insghts: It is a Google tool that amalyzes the performance of wen pages and provides recommendations to improve it.</h2>
+            <div>
+                <p class="my-2">This data us take from mobile devices</p>
+                <Images 
+                ImgUrl={ArqDSM}
+                alt="image the Page Speed Insghts the Arq Desing Studio mobile"
+                addClass="rounded-md"
+                />
+            </div>
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performance (99): This value indicate that the website has superior performace on desktop devices.</li>
+                    <li class="list-disc">Accessibility (100): This value indicate that the website meets accessibility standards, meaning It is easy to use for peaple whit disabilities.</li>
+                    <li class="list-disc">Recommendations (96): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (100): This value indicate that the website is well optimized for search engines.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="my-2">This data us take from desktop devices</p>
+                <Images 
+                ImgUrl={ArqDSD}
+                alt="image the Page Speed Insght the Arq Desing Studio desktop"
+                />
+            </div>
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performance (78): This value indicate that the website has a moderate performace on mobile devices</li>
+                    <li class="list-disc">Accessibility (100): This value indicate that the website meets accessibility standards, meaning It is easy to use for peaple whit disabilities.</li>
+                    <li class="list-disc">Recommendations (89): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (100): This value indicate that the website is well optimized for search engines.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</Layout>
