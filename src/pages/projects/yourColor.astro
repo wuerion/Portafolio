@@ -1,0 +1,78 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Images from "../../components/images.astro";
+import ImageYourColor from "../../images/Your-Color-wuerion.webp";
+import YCMSpeed from "../../images/YCSpeedM.webp";
+import YCDSpeed from "../../images/YCSpeedD.webp";
+---
+
+<Layout>
+    <main class="flex flex-col items-center gap-10 py-5">
+        <div class="w-full fixed flex justify-end px-5">
+            <a href="/" class="" title="Exit">
+                <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H15" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M19 12L15 8M19 12L15 16M19 12H9" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </a>
+            </div>
+        <div>
+            <h2 class="text-center text-2xl font-semibold">Your Color</h2>
+        </div>
+        <div class="px-3">
+            <a href="https://your-color-lilac.vercel.app/" title="YourColor" target="_blank">
+                <Images 
+                ImgUrl={ImageYourColor}
+                alt="image page the Your color"
+                addClass="rounded-md"
+                />
+            </a>
+        </div>
+        <div class="max-w-[700px] mx-3">
+            <p>
+                Your Color is a website what offers a colorimetry tools to
+                    help users discover which colors complement theis natural
+                    features based on the four-season theory: Spring,
+                    Summer,Autumn, and Winter. By inputing characteristics like
+                    skin tone, eye color and color hair, urser can find
+                    personalized color palettes that enhence their style and
+                    confidence. It includes an interactive test and explanatios
+                    pf how colors influence
+            </p>
+        </div>
+        <div class="flex flex-col gap-5 max-w-[700px] mx-3">
+            <h2>Page Speed Insghts: It is a Google tool that analyzes the performance of web pages and provides recommendations to improve it.  </h2>
+            <div>
+                <p class="my-2">This data us taken from mobile devices</p>
+                <Images 
+                ImgUrl={YCMSpeed}
+                alt="image the Page Speed Insghts the your color mobile"
+                addClass="rounded-md"
+                />
+            </div>
+
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performace (73): This value indicate that the website has a mederate performance on mobile devices.</li>
+                    <li class="list-disc">Accessibility (100): This value indicates that the website meets accessibility standards, meaning it is easy ti use for people whit disabilities.</li>
+                    <li class="list-disc">Recommendations (93): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (100): This value indicate that the website is well optimized for search engines.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="my-2">This data us taken from desktop devices</p>
+                <Images 
+                ImgUrl={YCDSpeed}
+                alt="Image the Page Speed Insghts the your color Desktop"
+                addClass="rounded-md"
+                />
+            </div>
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performace (97): This value indicate that the website has beat performance on desktop devices.</li>
+                    <li class="list-disc">Accessibility (93: this value indicate that the websaite meets accessibility standards, meaning it is easy it use for people whit disabilities.)</li>
+                    <li class="list-disc">Recommendations (96): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (100): This value indicate that the website is well optimixed for seaech engines.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</Layout>
