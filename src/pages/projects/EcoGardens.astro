@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Images from "../../components/images.astro";
+import EcoGarden from "../../images/ecogardens.webp";
+import ECOGM from "../../images/ECOGM.webp";
+import ECOGD from "../../images/ECOGD.webp";
+---
+
+<Layout>
+    <main class="flex flex-col items-center gap-10 py-5">
+        <div class="w-full fixed flex justify-end px-5">
+            <a href="/" title="Exit">
+                <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H15" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M19 12L15 8M19 12L15 16M19 12H9" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </a>
+        </div>
+        <div>
+            <h2 class="text-center text-2xl font-semibold">Eco Gardens</h2>
+        </div>
+        <div class="px-3">
+            <a href="https://ecogardens.zeabur.app/" title="EcoGardens" target="_blank">
+                <Images 
+                ImgUrl={EcoGarden}
+                alt="Image page the Eco Gardens"
+                addClass="rounded-md"
+                />
+            </a>
+        </div>
+        <div class="max-w-[700px] mx-3">
+            <p>
+                EcoGardes is a website that offers customers a way to get an
+                    automated indoor garden, ideal for people living in an
+                    apartment or house with little outdoor space. The main
+                    product is a modular site that includes automatic
+                    irrigation, humidity sensor and a mobile application to
+                    monitor the status of the garden. If you want more
+                    information, click on the following link:
+            </p>
+        </div>
+        <div class="flex flex-col gap-5 max-w-[700px] mx-3">
+            <h2>Page Speed Insghts: It is a Google tool that analyzes the performace of web page and provides recommendations to improve if.</h2>
+            <div>
+                <p class="my-2">This data us taken from mobile devices</p>
+                <Images 
+                ImgUrl={ECOGM}
+                alt="image the Page Speed Insinghts the Eco Gardens  mobile"
+                addClass="rounded-md"
+                />
+            </div>
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performance (81): This value indicate that the website has a moderate performace on mobile devices</li>
+                    <li class="list-disc">Accessibility (91): This value indicate that the website has a good level of accessibility respecting the standards.</li>
+                    <li class="list-disc">Recommendatios (96): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (91): This value indicate that the website has a good ranking for search engines.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="my-2">This data us taken desktop devices</p>
+                <Images 
+                ImgUrl={ECOGD}
+                alt="Image the Page Speed Insinghts the Eco Gardens desktop"
+                addClass="rounded-md"
+                />
+            </div>
+            <div>
+                <ul class="px-3.5">
+                    <li class="list-disc">Performance (97): This value indicate that the website has superior performace on desktop devices.</li>
+                    <li class="list-disc">Accessibility (93): This value indicate that the website has a good level of accessibility respecting.</li>
+                    <li class="list-disc">Recommendatios (96): This value indicate that the website follows web development best practices.</li>
+                    <li class="list-disc">SEO (100): This value indicate that the website is well optimixed for search engines.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</Layout> 
