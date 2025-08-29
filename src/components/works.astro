@@ -4,107 +4,159 @@ import yourColor from "/src/images/Your-Color.webp";
 import ecogardens from "/src/images/ecogardens.webp";
 import ArqDesingStudio from "/src/images/arqDesingStudio.webp";
 import Tools from "/src/images/Tools.webp";
+import Cafeina from "/src/images/cafeina&co.webp";
 ---
 
 <section class="flex flex-col gap-5" id="works">
-    <div class="w-full mt-5 border-b-2 border-violet-700 dark:border-purple-500">
-        <h2 class="text-xl text-start ml-2">Works</h2>
+  <div class="w-full mt-5 border-b-2 border-violet-700 dark:border-purple-500">
+    <h2 class="text-xl text-start ml-2">Works</h2>
+  </div>
+  <div class="gap-3 grid lg:grid-cols-3 lg:gap-5 px-2">
+    <div class="">
+      <div class="w-full">
+        <Images
+          ImgUrl={yourColor}
+          alt="Your Color"
+          addClass="object-cover w-full h-48 rounded-t-lg"
+        />
+      </div>
+      <div class="bg-white p-2 text-center rounded-b-lg">
+        <p>
+          <a
+            href="https://your-color-lilac.vercel.app/"
+            target="_blank"
+            class="text-violet-600 dark:text-purple-700 text-lg">Your Color</a
+          >
+        </p>
+        <p class="text-black">
+          Your Color is a website what offers a colorimetry tools to help users
+          discover which colors complement theis natural features based on the
+          four-season theory: Spring, Summer,Autumn, and Winter. By inputing
+          characteristics like skin tone, eye color and color hair, urser can
+          find personalized color palettes that enhence their style and
+          confidence. It includes an interactive test and explanatios pf how
+          colors influence the following link: <a
+            href="/projects/yourColor"
+            class="text-violet-600 dark:text-purple-700">Your Color</a
+          >
+        </p>
+      </div>
     </div>
-    <div class="gap-3 grid lg:grid-cols-3 lg:gap-5 px-2">
-        <div class="">
-            <div class="w-full">
-                <Images
-                    ImgUrl={yourColor}
-                    alt="Your Color"
-                    addClass="object-cover w-full h-48 rounded-t-lg"
-                />
-            </div>
-            <div class="bg-white p-2 text-center rounded-b-lg">
-                <p>
-                    <a
-                        href="https://your-color-lilac.vercel.app/"
-                        target="_blank"
-                        class="text-violet-600 dark:text-purple-700 text-lg">Your Color</a
-                    >
-                </p>
-                <p class="text-black">
-                    Your Color is a website what offers a colorimetry tools to
-                    help users discover which colors complement theis natural
-                    features based on the four-season theory: Spring,
-                    Summer,Autumn, and Winter. By inputing characteristics like
-                    skin tone, eye color and color hair, urser can find
-                    personalized color palettes that enhence their style and
-                    confidence. It includes an interactive test and explanatios
-                    pf how colors influence the following link: <a
-                        href="/projects/yourColor"
-                        class="text-violet-600 dark:text-purple-700">Your Color</a
-                    >
-                </p>
-            </div>
-        </div>
-        
-        <div class="">
-            <div class="card">
-                <Images
-                    ImgUrl={ecogardens}
-                    alt="Your Color"
-                    addClass="object-cover w-full h-48 rounded-t-lg"
-                />
-            </div>
-            <div class="bg-white p-2 text-center rounded-b-lg">
-                <p>
-                    <a
-                        href="https://ecogardens.vercel.app/"
-                        target="_blank"
-                        class="text-violet-600 dark:text-purple-700 text-lg">EcoGaedens</a
-                    >
-                </p>
-                <p class="text-black">
-                    EcoGardes is a website that offers customers a way to get an
-                    automated indoor garden, ideal for people living in an
-                    apartment or house with little outdoor space. The main
-                    product is a modular site that includes automatic
-                    irrigation, humidity sensor and a mobile application to
-                    monitor the status of the garden. If you want more
-                    information, click on the following link: <a
-                        href="/projects/EcoGardens"
-                        class="text-violet-600 dark:text-purple-700">EcoGardens</a
-                    >
-                </p>
-            </div>
-        </div>
-        <div class="">
-            <div class="card">
-                <Images
-                    ImgUrl={ArqDesingStudio}
-                    alt="Your Color"
-                    addClass="object-cover w-full h-48 rounded-t-lg"
-                />
-            </div>
-            <div class="bg-white p-2 text-center rounded-b-lg">
-                <p>
-                    <a href="https://arq-desing-studio.vercel.app/" target="_blank" class="text-violet-600 dark:text-purple-700 text-lg">Arq Desing Studio</a>
-                </p>
-                <p class="text-black">
-                    Arq Design Studio is an architecture and design studio that champions innovation and functionality. Our approach combines creativity and precision to transform ideas into unique, personalized, and stylish spaces. Discover how the fusion of art and technique can elevate your projects to another level. click on the following link: <a href="/projects/ArqDesingStudio"  class="text-violet-600 dark:text-purple-700">Arq Design Studio</a> 
-                </p>
-            </div>
-        </div>   <div class="">
-            <div class="card">
-                <Images
-                    ImgUrl={Tools}
-                    alt="Your Color"
-                    addClass="object-cover w-full h-48 rounded-t-lg"
-                />
-            </div>
-            <div class="bg-white p-2 text-center rounded-b-lg">
-                <p>
-                    <a href="https://tools-sepia-phi.vercel.app/homePage" target="_blank" class="text-violet-600 dark:text-purple-700 text-lg">Tools</a>
-                </p>
-                <p class="text-black">
-                   Tools is a webs for developers and designers, Here you will find what you need. This website was created to have a place where you can find: colors, gradients, fonts, frameworks/librarys, webs and plugins. click on the following link: <a href="/projects/Tools"  class="text-violet-600 dark:text-purple-700">Tools</a> 
-                </p>
-            </div>
-        </div>
+    <div class="">
+      <div class="w-full">
+        <Images
+          ImgUrl={Cafeina}
+          alt="Cafeina & Co"
+          addClass="object-cover w-full h-48 rounded-t-lg"
+        />
+      </div>
+      <div class="bg-white p-2 text-center rounded-b-lg">
+        <p>
+          <a
+            href="https://cafeina-co-e-commorce-ibwp.vercel.app/"
+            target="_blank"
+            class="text-violet-600 dark:text-purple-700 text-lg"
+            >Cafeina & Co.</a
+          >
+        </p>
+        <p class="text-black">
+          Cafeina & Co. Is a coffee shop specializing in high-end specialty
+          coffee, using artisanally roasted beans. It goes beyond the beverage.
+          In addition to its coffee menu (which includes Expresso, Cappuccino,
+          and Latte), the place serves as a versatile and welcoming space where
+          visitors can work, study, or relax. If you want more information,
+          click on the following link:<a
+            href="/projects/Cafeina&Co"
+            class="text-violet-600 dark:text-purple-700">Cafeina & Co.</a
+          >
+        </p>
+      </div>
     </div>
+
+    <div class="">
+      <div class="card">
+        <Images
+          ImgUrl={ecogardens}
+          alt="Your Color"
+          addClass="object-cover w-full h-48 rounded-t-lg"
+        />
+      </div>
+      <div class="bg-white p-2 text-center rounded-b-lg">
+        <p>
+          <a
+            href="https://ecogardens.vercel.app/"
+            target="_blank"
+            class="text-violet-600 dark:text-purple-700 text-lg">EcoGaedens</a
+          >
+        </p>
+        <p class="text-black">
+          EcoGardes is a website that offers customers a way to get an automated
+          indoor garden, ideal for people living in an apartment or house with
+          little outdoor space. The main product is a modular site that includes
+          automatic irrigation, humidity sensor and a mobile application to
+          monitor the status of the garden. If you want more information, click
+          on the following link: <a
+            href="/projects/EcoGardens"
+            class="text-violet-600 dark:text-purple-700">EcoGardens</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <Images
+          ImgUrl={ArqDesingStudio}
+          alt="Your Color"
+          addClass="object-cover w-full h-48 rounded-t-lg"
+        />
+      </div>
+      <div class="bg-white p-2 text-center rounded-b-lg">
+        <p>
+          <a
+            href="https://arq-desing-studio.vercel.app/"
+            target="_blank"
+            class="text-violet-600 dark:text-purple-700 text-lg"
+            >Arq Desing Studio</a
+          >
+        </p>
+        <p class="text-black">
+          Arq Design Studio is an architecture and design studio that champions
+          innovation and functionality. Our approach combines creativity and
+          precision to transform ideas into unique, personalized, and stylish
+          spaces. Discover how the fusion of art and technique can elevate your
+          projects to another level. click on the following link: <a
+            href="/projects/ArqDesingStudio"
+            class="text-violet-600 dark:text-purple-700">Arq Design Studio</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <Images
+          ImgUrl={Tools}
+          alt="Your Color"
+          addClass="object-cover w-full h-48 rounded-t-lg"
+        />
+      </div>
+      <div class="bg-white p-2 text-center rounded-b-lg">
+        <p>
+          <a
+            href="https://tools-sepia-phi.vercel.app/homePage"
+            target="_blank"
+            class="text-violet-600 dark:text-purple-700 text-lg">Tools</a
+          >
+        </p>
+        <p class="text-black">
+          Tools is a webs for developers and designers, Here you will find what
+          you need. This website was created to have a place where you can find:
+          colors, gradients, fonts, frameworks/librarys, webs and plugins. click
+          on the following link: <a
+            href="/projects/Tools"
+            class="text-violet-600 dark:text-purple-700">Tools</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
