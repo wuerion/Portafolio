@@ -1,0 +1,149 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Images from "../../components/images.astro";
+import Cafeina from "../../images/cafeina&co.webp";
+import CefinaM from "../../images/C&CM.webp";
+import CefinaD from "../../images/C&CD.webp";
+---
+
+<Layout>
+  <main class="flex flex-col items-center gap-10 py-5">
+    <div class="w-full fixed flex justify-end px-5">
+      <a href="/" class="" title="Exit">
+        <!--?xml version="1.0" ?-->
+        <svg
+          fill="none"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="M15 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H15"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path><path
+            d="M19 12L15 8M19 12L15 16M19 12H9"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path></svg
+        >
+      </a>
+    </div>
+    <div>
+      <h2 class="text-center text-2xl font-semibold">Cafeina&Co.</h2>
+    </div>
+    <div class="px-3">
+      <a
+        href="https://cafeina-co-e-commorce-ibwp.vercel.app/"
+        title="Cafeina&Co."
+        target="_blank"
+      >
+        <Images
+          ImgUrl={Cafeina}
+          alt="image page the Cafeina&Co."
+          addClass="rounded-md shadow-lg  dark:shadow-black/50 "
+        />
+      </a>
+    </div>
+    <div class="max-w-[700px] mx-3">
+      <p>
+        Cafeina & Co. is a coffee shop specializing in high-end specialty
+        coffee, using artisanally roasted beans. It goes beyond the beverage. In
+        addition to its coffee menu (which includes Expresso, Cappuccino, and
+        Latte), the place serves as a versatile and welcoming space where
+        visitors can work, study, or relax. It offers soundproofed rooms
+        equipped with high-speed Wi-Fi for those seeking a quiet and productive
+        environment. For leisure time, the cafe offers a collection of books and
+        a variety of board games, free to use with purchase. Cafeina & Co. also
+        accepts reservations for its facilities for events or the use of work
+        rooms.
+      </p>
+    </div>
+
+    <div class="w-full flex justify-center">
+      <a
+        href="https://github.com/wuerion/Cafeina-Co-E-commorce"
+        target="_blank"
+        title="visit github"
+        class="text-base rounded-full px-5 p-2.5 mx-2 text-black font-semibold text-center bg-violet-400 dark:bg-purple-400 shadow-md shadow-violet-400 dark:shadow-black/50"
+        >Visit github</a
+      >
+      <a
+        href="https://cafeina-co-e-commorce-ibwp.vercel.app/"
+        target="_blank"
+        title="visit page"
+        class="text-base rounded-full px-5 p-2.5 mx-2 text-black font-semibold text-center bg-violet-400 dark:bg-purple-400 shadow-md shadow-violet-400 dark:shadow-black/50"
+        >Visit page</a
+      >
+    </div>
+
+    <div class="flex flex-col gap-5 max-w-[700px] mx-3">
+      <h2>
+        Page Speed Insghts: It is a Google tool that analyzes the performance of
+        web pages and provides recommendations to improve it.
+      </h2>
+      <div>
+        <p class="my-2">This data us taken from mobile devices</p>
+        <Images
+          ImgUrl={CefinaM}
+          alt="image the Page Speed Insghts the cafeina&co mobile"
+          addClass="rounded-md"
+        />
+      </div>
+
+      <div>
+        <ul class="px-3.5">
+          <li class="list-disc">
+            Performace (77): This value indicate that the website has a moderate
+            performace on mobile devices.
+          </li>
+          <li class="list-disc">
+            Accessibility (88): This value indicates that the website meets
+            accessibility standards, meaning it is easy ti use for people whit
+            disabilities.
+          </li>
+          <li class="list-disc">
+            Recommendations (100): This value indicate that the website follows
+            web development best practices.
+          </li>
+          <li class="list-disc">
+            SEO (92): This value indicate that the website is well optimized for
+            search engines.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="my-2">This data us taken from desktop devices</p>
+        <Images
+          ImgUrl={CefinaD}
+          alt="Image the Page Speed Insghts the cafeina&co Desktop"
+          addClass="rounded-md"
+        />
+      </div>
+      <div>
+        <ul class="px-3.5">
+          <li class="list-disc">
+            Performace (98): This value indicates that the website performs
+            better on desktop devices.
+          </li>
+          <li class="list-disc">
+            Accessibility (88): this value indicate that the websaite meets
+            accessibility standards, meaning it is easy it use for people whit
+            disabilities.
+          </li>
+          <li class="list-disc">
+            Recommendations (100): This value indicate that the website follows
+            web development best practices.
+          </li>
+          <li class="list-disc">
+            SEO (92): This value indicate that the website is well optimixed for
+            seaech engines.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>
