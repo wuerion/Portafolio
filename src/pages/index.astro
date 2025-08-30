@@ -1,21 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Home from '../components/home.astro';
-import Sidebar from '../components/sidebar.astro';
-import About from '../components/about.astro';
-import Skills from '../components/skills.astro';
-import Works from '../components/works.astro';
+import Layout from "../layouts/Layout.astro";
+import Home from "../components/home.astro";
+import Sidebar from "../components/sidebar.astro";
+import About from "../components/about.astro";
+import Skills from "../components/skills.astro";
+import Works from "../components/works.astro";
 ---
-<Layout addClass="lg:grid grid-cols-5">
-	<!-- <header class="block lg:row-span-5"> -->
-	<header class="w-full">
-		<Sidebar />
-	</header>
-	<!-- <main class="font-title col-span-4"> -->
-	<main class="font-title lg:col-span-4">
-		<Home />
-		<About />
-		<Works />
-		<Skills />
-	</main>
+
+<Layout addClass="lg:grid grid-cols-5 flex flex-col">
+  <!-- <header class="block lg:row-span-5"> -->
+  <header class="w-full">
+    <Sidebar />
+  </header>
+  <!-- <main class="font-title col-span-4"> -->
+  <main class="font-title flex flex-col gap-8 lg:col-span-4">
+    <Home />
+    <About />
+    <Works />
+    <Skills />
+  </main>
 </Layout>
